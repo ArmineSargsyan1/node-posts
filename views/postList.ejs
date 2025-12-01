@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include("includes/header", { title: title }) %>
+</head>
+<body>
+
+<h1><%= title %></h1>
+
+<% if (success) { %>
+    <p>Total posts: <%= totalCount %></p>
+    <p>Page <%= page %> of <%= totalPages %></p>
+
+    <ul>
+        <% posts.forEach(post => { %>
+            <%- include("posts/postShow", { post }) %>
+        <% }) %>
+    </ul>
+<% } %>
+
+</body>
+</html>
+

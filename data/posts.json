@@ -1,0 +1,75 @@
+[
+  {
+    "id": "1762620043242",
+    "title": "mongodb",
+    "content": "Node.js is a powerful JavaScript runtime...",
+    "author": "Akd",
+    "tags": [
+      "mongodb",
+      "database"
+    ],
+    "createdAt": "2025-11-08T16:40:43.242Z",
+    "comments": [
+      {
+        "id": "df6888a2-da4e-4903-aae5-a55c0bafa41f",
+        "userId": "019ad00b-70ba-764d-bc8b-f3461ddeb9de",
+        "text": "tkkjklytnmkty",
+        "createdAt": "2025-12-01T09:05:44.254Z"
+      }
+    ]
+  },
+  {
+    "id": "1762613859372",
+    "title": "Inooooooooooos",
+    "content": "Node.js is a powerful JavaScript runtime...",
+    "author": "John Doe",
+    "tags": [
+      "nodejs",
+      "javascript",
+      "backend"
+    ],
+    "createdAt": "2025-11-08T14:57:39.372Z",
+    "comments": [
+      {
+        "id": "976e7dcb-7b02-4736-abed-b5e95f7669da",
+        "userId": "019ad00b-70ba-764d-bc8b-f3461ddeb9de",
+        "text": "tkkjklytnmkty",
+        "createdAt": "2025-12-01T08:58:21.579Z"
+      },
+      {
+        "id": "d9233348-8e9c-474e-bed9-e57dc3d6bbd6",
+        "userId": "019ad00b-70ba-764d-bc8b-f3461ddeb9de",
+        "text": "tkkjklytnmkty",
+        "createdAt": "2025-12-01T08:58:11.780Z"
+      },
+      {
+        "id": "f0ef7bb8-b1f0-40ec-abf2-c2df66169d2a",
+        "userId": "019ad00b-70ba-764d-bc8b-f3461ddeb9de",
+        "text": "tkkjklytnmkty",
+        "createdAt": "2025-12-01T08:55:52.097Z"
+      }
+    ]
+  },
+  {
+    "id": "ccf7da51-d1b4-4c31-8970-ca9564e7fc94",
+    "title": "bbbbgbbb",
+    "content": "Node.js is a powerful JavaScript runtime...",
+    "author": "John Doe",
+    "userId": "019ad00b-70ba-764d-bc8b-f3461ddeb9de",
+    "tags": [
+      "nodejs",
+      "javascript",
+      "backend"
+    ],
+    "createdAt": "2025-12-01T08:41:16.789Z",
+    "updatedAt": "2025-12-01T08:46:32.436Z",
+    "comments": [
+      {
+        "id": "e0e135d6-caae-43a2-ae12-0795b9c03562",
+        "userId": "019ad00b-70ba-764d-bc8b-f3461ddeb9de",
+        "text": "tkkjklytnmkty",
+        "createdAt": "2025-12-01T08:55:13.967Z"
+      }
+    ]
+  }
+]
