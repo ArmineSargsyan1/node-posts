@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Register</h2>
+
+    <% if (errors && Object.keys(errors).length > 0) { %>
+        <div class="errors">
+            <% for (let key in errors) { %>
+                <p><strong><%= key %>:</strong> <%= errors[key] %></p>
+            <% } %>
+        </div>
+    <% } %>
+
+    <form action="/auth/registration" method="POST">
+        <label>Username</label>
+        <input type="text" name="username" value="<%= old?.username || '' %>" required>
+
+        <label>Email</label>
+        <input type="email" name="email" value="<%= old?.email || '' %>" required>
+
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <label>City</label>
+        <input type="text" name="address[city]" value="<%= old?.address?.city || '' %>">
+
+        <label>State</label>
+        <input type="text" name="address[state]" value="<%= old?.address?.state || '' %>">
+
+        <label>ZIP</label>
+        <input type="text" name="address[zip]" value="<%= old?.address?.zip || '' %>">
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+</body>
+</html>
