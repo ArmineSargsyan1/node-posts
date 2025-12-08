@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "id": "019af48a-cb0e-74ea-bec1-fb957236e1ca",
+    "username": "rgegeddd",
+    "email": "admin@mail.ru",
+    "password": "df32d04f613bf7a23a047398fe1a03a8",
+    "address": {
+      "city": "wfeavreg",
+      "state": "fffffffff",
+      "zip": "trhtrrrrrrrrrrrrrrrrr"
+    },
+    "createdAt": "2025-12-06T16:42:08.017Z",
+    "updatedAt": "2025-12-06T16:42:08.019Z"
+  },
+  {
+    "id": "019af4b5-c7dd-77aa-a54b-559d89e51069",
+    "username": "rntr",
+    "email": "emikgul@email.com",
+    "password": "f357700bc3f48bd692535addc71401c8",
+    "address": "-",
+    "createdAt": "2025-12-06T17:29:05.246Z",
+    "updatedAt": "2025-12-06T17:29:05.248Z"
+  },
+  {
+    "id": "019af4b5-fbe2-713d-9ec0-c14263450981",
+    "username": "rntr",
+    "email": "emikgl@email.com",
+    "password": "f357700bc3f48bd692535addc71401c8",
+    "address": "-",
+    "createdAt": "2025-12-06T17:29:18.564Z",
+    "updatedAt": "2025-12-06T17:29:18.567Z"
+  },
+  {
+    "id": "019af4cc-aaa1-70aa-b83a-3105ed81c764",
+    "username": "rrrrrrrr",
+    "email": "adwmin@mail.ru",
+    "password": "850bcdb02ab7d22187a557fe926bbcbd",
+    "address": {
+      "city": "wfeavreg",
+      "state": "agergre",
+      "zip": "rtbrt"
+    },
+    "createdAt": "2025-12-06T17:54:05.091Z",
+    "updatedAt": "2025-12-06T17:54:05.091Z"
+  },
+  {
+    "id": "019af509-4dc1-73ef-899f-948d2fcd6642",
+    "username": "emilyxss",
+    "email": "adxmin@mail.ru",
+    "password": "c1de8f7cc95603165409123ef6d331f2",
+    "address": {
+      "city": "wfeavreg",
+      "state": "agergre",
+      "zip": "xx"
+    },
+    "createdAt": "2025-12-06T19:00:19.012Z",
+    "updatedAt": "2025-12-06T19:00:19.012Z"
+  },
+  {
+    "id": "019af50d-6970-725c-a5ac-99c3bb0e4397",
+    "username": "egmilyxss",
+    "email": "adxmign@mail.ru",
+    "password": "c1de8f7cc95603165409123ef6d331f2",
+    "address": {
+      "city": "wfeavreg",
+      "state": "agergre",
+      "zip": "xx"
+    },
+    "createdAt": "2025-12-06T19:04:48.242Z",
+    "updatedAt": "2025-12-06T19:04:48.242Z"
+  }
+]

@@ -10,14 +10,6 @@ export default {
     try {
       const { email, password } = req.body;
 
-      if (!password || !email) {
-        res.status(422).json({
-          status: 'error',
-          message: 'email and password are required'
-        });
-        return;
-      }
-
       const user = await usersModel.findUserByEmail(email);
 
       if (!user) {

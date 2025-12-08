@@ -3,41 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/stylesheets/registration.css">
 </head>
 <body>
 <div class="container">
     <h2>Register</h2>
 
-    <% if (errors && Object.keys(errors).length > 0) { %>
-        <div class="errors">
-            <% for (let key in errors) { %>
-                <p><strong><%= key %>:</strong> <%= errors[key] %></p>
-            <% } %>
+    <div class="general-error"></div>
+
+    <form id="registration_form">
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" name="username">
+            <span class="error-message"></span>
         </div>
-    <% } %>
 
-    <form action="/auth/registration" method="POST">
-        <label>Username</label>
-        <input type="text" name="username" value="<%= old?.username || '' %>" required>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" name="email">
+            <span class="error-message"></span>
+        </div>
 
-        <label>Email</label>
-        <input type="email" name="email" value="<%= old?.email || '' %>" required>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password">
+            <span class="error-message"></span>
+        </div>
 
-        <label>Password</label>
-        <input type="password" name="password" required>
+        <div class="form-group">
+            <label>City</label>
+            <input type="text" name="address[city]">
+            <span class="error-message"></span>
+        </div>
 
-        <label>City</label>
-        <input type="text" name="address[city]" value="<%= old?.address?.city || '' %>">
+        <div class="form-group">
+            <label>State</label>
+            <input type="text" name="address[state]">
+            <span class="error-message"></span>
+        </div>
 
-        <label>State</label>
-        <input type="text" name="address[state]" value="<%= old?.address?.state || '' %>">
-
-        <label>ZIP</label>
-        <input type="text" name="address[zip]" value="<%= old?.address?.zip || '' %>">
+        <div class="form-group">
+            <label>ZIP</label>
+            <input type="text" name="address[zip]">
+            <span class="error-message"></span>
+        </div>
 
         <button type="submit">Register</button>
     </form>
+
+
 </div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/javascripts/registration.js"></script>
 </body>
 </html>

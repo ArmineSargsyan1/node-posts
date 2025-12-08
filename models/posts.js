@@ -33,13 +33,11 @@ export async function writePosts(posts) {
   await fs.writeFile(postsFile, JSON.stringify(posts, null, 2), "utf-8");
 }
 
-export function findPostById({posts, id}) {
-  if (!Array.isArray(posts)) {
-    throw new Error('Posts must be an array');
-  }
-
+export async function findPostById(id) {
+  const posts = await readPosts();
   return posts.find(post => post.id === id) || null;
 }
+
 
 export function addComment({posts, post, users, userId, text}) {
 
@@ -83,8 +81,9 @@ export async function createPost({title, content, author, tags, userId,}) {
   return newPost;
 }
 
-export function filterPosts({posts, filters}) {
-
+export async function filterPosts(filters) {
+  console.log(filters,33)
+  const posts = await readPosts();
   const page = Number(filters.page) || 1;
   const limit = Number(filters.limit) || 10;
 
@@ -190,7 +189,7 @@ export function filterPosts({posts, filters}) {
 
 export async function updatePost({id, title, content, tags}) {
   const posts = await readPosts();
-  const matchedPost = findPostById({posts, id});
+  const matchedPost = findPostById(id);
   if (!matchedPost) throw new Error("Post not found");
 
   const newData = {
@@ -206,14 +205,14 @@ export async function updatePost({id, title, content, tags}) {
 
   await writePosts(updatedPosts);
 
-  return findPostById({posts: updatedPosts, id});
+  return findPostById(id);
 }
 
 
 export async function deletePost(id) {
   const posts = await readPosts();
 
-  const existingPost = findPostById({posts, id})
+  const existingPost = findPostById(id)
 
   if (!existingPost) {
     throw new Error("Post not found");

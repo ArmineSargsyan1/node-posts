@@ -1,4 +1,5 @@
 import {sanitizeUser} from "../models/users.js";
+import {readPosts} from "../models/posts.js";
 
 export function attachUsersToPosts({posts, users}) {
   return posts.map(post => {
@@ -10,7 +11,8 @@ export function attachUsersToPosts({posts, users}) {
 
 }
 
-export async function isPostExists({title, userId, readPosts}) {
+export async function isPostExists({title, userId}) {
+
   const posts = await readPosts();
 
   return posts.some(

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/createPost.css">
+
+</head>
+
+<body>
+<div class="container">
+    <h1><%= title %></h1>
+    <div id="general-error" class="error" style="display:none; color:red;"></div>
+
+    <form id="create_post"  action="/posts/create">
+
+        <label>Title:</label>
+        <input type="text" name="title" />
+        <span class="error" id="error-title"></span>
+
+        <label>Content:</label>
+        <textarea name="content"></textarea>
+        <span class="error" id="error-content"></span>
+
+        <label>Author:</label>
+        <input type="text" name="author" />
+        <span class="error" id="error-author"></span>
+
+<!--        <label>Tags</label>-->
+<!--        <input type="text" name="tags" />-->
+<!--        <span class="error" id="error-tags"></span>-->
+
+        <button type="submit"><%= title %></button>
+
+    </form>
+
+    <div id="response"></div>
+
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/javascripts/create.js"></script>
+</body>
+</html>
